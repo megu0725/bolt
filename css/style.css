@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* ヘッダー */
+.header {
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-icon {
+  font-size: 12px;
+  padding: 14px 12px;
+  color: #fff;
+  background-color: #74cfae;
+}
+/* メイン */
+.page-title {
+  background-color: #f2f2f2;
+  margin-top: 70px;
+}
+
+.main-title {
+  padding: 250px 0;
+}
+
+.main-title h1 {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+.main-title p {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #c0c0c0;
+}
+/* フッター */

@@ -28,23 +28,52 @@
   background-color: #74cfae;
 }
 /* メイン */
-.page-title {
+/* メインタイトル */
+.Page-title {
   background-color: #f2f2f2;
   margin-top: 70px;
 }
 
-.main-title {
+.maintitle-inner {
   padding: 250px 0;
 }
 
-.main-title h1 {
+.maintitle-inner h1 {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
 }
-.main-title p {
+.maintitle-inner p {
   margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
 }
+/* ページの説明 */
+.Description {
+  background-color: #74cfae;
+  color: #fff;
+}
+
+.Description-inner {
+  padding-top: 50px;
+  font-size: 0;
+}
+
+.phone {
+}
+
+.Description-textbox {
+  display: inline-block;
+}
+
+.description-title {
+  font-size: 24px;
+}
+
+.description-text {
+  margin-top: 35px;
+  font-size: 20px;
+  word-break: break-all;
+}
+
 /* フッター */

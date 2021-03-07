@@ -17,6 +17,10 @@ p , div{
 i {
   font-size: 2em;
 }
+img , a , i {
+transition-delay: 0.3ms;
+}
+
 /* ヘッダー */
 .header {
   padding: 15px 0;
@@ -26,6 +30,7 @@ i {
   width: 100%;
   text-align: center;
   background-color: #fff;
+  z-index: 1;
 }
 
 .header-inner {
@@ -42,6 +47,11 @@ i {
   padding: 14px 12px;
   color: #fff;
   background-color: #74cfae;
+}
+
+.contact-icon:hover {
+  color: #333;
+  cursor: pointer;
 }
 /* メイン */
 /* メインタイトル */
@@ -105,10 +115,16 @@ i {
   display: flex;
   flex-wrap: wrap;
 }
+
 .picture {
   margin-left: 100px;
+  opacity: 0.7;
 }
 
+.picture:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 .picture:nth-child(n+4) {
   margin-top: 80px;
 }
@@ -131,6 +147,11 @@ i {
   display: inline-block;
   margin-left: 90px;
   vertical-align: top;
+}
+
+.mail-icon:hover {
+  color: #333;
+  cursor: pointer;
 }
 
 /* スキルゲージ */
@@ -168,7 +189,14 @@ i {
 .SNS-icon {
   color: #74cfae;
   width: 185px;
+  line-height: 100px;
 }
+
+.SNS-icon:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
 /* フッター */
 .footer {
   background-color: #74cfae;

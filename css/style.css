@@ -5,6 +5,14 @@
   margin: 0 auto;
   text-align: center;
 }
+
+h1 {
+  font-family: "Raleway";
+}
+
+p , div{
+  font-family: "Lato";
+}
 /* ヘッダー */
 .header {
   padding: 15px 0;
@@ -38,7 +46,7 @@
   padding: 250px 0;
 }
 
-.maintitle-inner h1 {
+.main-title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
@@ -61,10 +69,8 @@
   font-size: 0;
 }
 
-.phone {
-}
-
 .Description-textbox {
+  width: 60%;
 }
 
 .description-title {
@@ -74,7 +80,53 @@
 .description-text {
   margin-top: 35px;
   font-size: 20px;
-  word-break: break-all;
+  line-height: 30px;
+  word-break: keep-all;
 }
 
+/* 画像エリア */
+.art-picture {
+  background-color: #f2f2f2;
+}
+
+.picture-inner {
+  padding: 60px 0 70px 0;
+}
+.picture-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.picture-area {
+  padding: 40px 0 90px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.picture {
+  margin-left: 100px;
+}
+
+.picture:nth-child(n+4) {
+  margin-top: 80px;
+}
+.picture:first-child,
+.picture:nth-child(4) {
+  margin-left: 0;
+}
+.picture-text {
+  display: inline-block;
+  width: 42%;
+  line-height: 25px;
+  color: #333;
+}
+
+.mail-icon {
+  font-size: 12px;
+  padding: 14px 20px;
+  background-color: #74cfae;
+  color: #fff;
+  display: inline-block;
+  margin-left: 90px;
+  vertical-align: top;
+}
 /* フッター */

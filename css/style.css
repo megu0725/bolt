@@ -8,10 +8,14 @@
 
 h1 {
   font-family: "Raleway";
+  font-size: 24px;
 }
 
 p , div{
   font-family: "Lato";
+}
+i {
+  font-size: 2em;
 }
 /* ヘッダー */
 .header {
@@ -27,6 +31,10 @@ p , div{
 .header-inner {
   display: flex;
   justify-content: space-around;
+}
+
+.Bolt {
+  color: #4e4e4e;
 }
 
 .contact-icon {
@@ -73,10 +81,6 @@ p , div{
   width: 60%;
 }
 
-.description-title {
-  font-size: 24px;
-}
-
 .description-text {
   margin-top: 35px;
   font-size: 20px;
@@ -93,7 +97,6 @@ p , div{
   padding: 60px 0 70px 0;
 }
 .picture-title {
-  font-size: 24px;
   color: #333;
 }
 
@@ -129,4 +132,55 @@ p , div{
   margin-left: 90px;
   vertical-align: top;
 }
+
+/* スキルゲージ */
+.our-skill {
+  background-color: #4e4e4e;
+}
+
+.OurSkill-inner {
+  padding: 70px 0 100px 0;
+  color: #fff;
+}
+
+.skill-box {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.skill-gauge {
+  display: inline-block;
+  margin-left: 180px;
+}
+.skill-gauge:first-of-type{
+  margin-left: 0;
+}
+/* SNS */
+.SNS-nav {
+  background-color: #f2f2f2;
+}
+
+.SNS-inner {
+  padding: 200px 0;
+}
+
+.SNS-icon {
+  color: #74cfae;
+  width: 185px;
+}
 /* フッター */
+.footer {
+  background-color: #74cfae;
+  color: #fff;
+}
+.footer-inner {
+  padding: 20px 0 25px 0;
+}
+
+.footer-text {
+text-align: right;
+}
+.heart {
+  font-size: 1em;
+}

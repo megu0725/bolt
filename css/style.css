@@ -17,7 +17,7 @@ p , div{
 i {
   font-size: 2em;
 }
-img , a , i {
+ a , i {
 transition-delay: 0.3ms;
 }
 

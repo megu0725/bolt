@@ -1,12 +1,18 @@
 @charset "utf-8";
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
 
-h1 {
+h1 , h2 {
   font-family: "Raleway";
   font-size: 24px;
 }
@@ -17,8 +23,9 @@ p , div{
 i {
   font-size: 2em;
 }
- a , i {
-transition-delay: 0.3ms;
+a , i , li {
+transition-delay: 0.3s;
+text-decoration: none;
 }
 
 /* ヘッダー */
@@ -35,7 +42,7 @@ transition-delay: 0.3ms;
 
 .header-inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .Bolt {
@@ -110,28 +117,32 @@ transition-delay: 0.3ms;
   color: #333;
 }
 
-.picture-area {
-  padding: 40px 0 90px 0;
+.picture-area ul{
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.picture {
+.picture-area li {
   margin-left: 100px;
   opacity: 0.7;
 }
 
-.picture:hover {
+.picture-area li:hover {
   opacity: 1;
   cursor: pointer;
 }
-.picture:nth-child(n+4) {
+.picture-area li:nth-child(n+4) {
   margin-top: 80px;
 }
-.picture:first-child,
-.picture:nth-child(4) {
+.picture-area li:first-child,
+.picture-area li:nth-child(4) {
   margin-left: 0;
 }
+.picture-text-area {
+margin-top: 90px;
+}
+
 .picture-text {
   display: inline-block;
   width: 42%;
@@ -170,11 +181,12 @@ transition-delay: 0.3ms;
   line-height: 30px;
 }
 
-.skill-gauge {
-  display: inline-block;
+.skill-gauge li{
+  float: left;
   margin-left: 180px;
 }
-.skill-gauge:first-of-type{
+
+.skill-gauge li:first-of-type{
   margin-left: 0;
 }
 /* SNS */
@@ -184,6 +196,10 @@ transition-delay: 0.3ms;
 
 .SNS-inner {
   padding: 200px 0;
+}
+
+.SNS-inner li {
+  display: inline-block;
 }
 
 .SNS-icon {

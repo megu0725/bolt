@@ -1,22 +1,24 @@
 @charset "utf-8";
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .inner {
   width: 1100px;
   margin: 0 auto;
-  text-align: center;
-}
-body {
-  font-family: "Raleway";
-  font-family: "Lato";
 }
 
-h1, h2 {
+.body {
+  font-family: "Lato";
+  color: #333;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.Raleway {
   font-family: "Raleway";
   font-size: 24px;
 }
@@ -24,10 +26,13 @@ h1, h2 {
 i {
   font-size: 2em;
 }
-a, i, li {
-transition-duration: 0.3s;
-text-decoration: none;
+
+a, li{
+  display: inline-block;
+  transition-duration: 0.3s;
+  text-decoration: none;
 }
+
 
 /* ヘッダー */
 .header {
@@ -38,7 +43,7 @@ text-decoration: none;
   width: 100%;
   text-align: center;
   background-color: #fff;
-  z-index: 1;
+  z-index: 999;
 }
 
 .header-inner {
@@ -59,12 +64,11 @@ text-decoration: none;
 
 .contact-icon:hover {
   color: #333;
-  cursor: pointer;
 }
-/* メイン */
-。main {
-  margin-top: 70px;
 
+/* メイン */
+.main {
+  padding-top: 70px;
 }
 
 /* メインタイトル */
@@ -81,15 +85,16 @@ text-decoration: none;
   font-weight: 700;
   color: #74cfae;
 }
+
 .maintitle-inner p {
   margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
 }
+
 /* ページの説明 */
 .Description {
   background-color: #74cfae;
-  color: #fff;
 }
 
 .Description-inner {
@@ -118,14 +123,12 @@ text-decoration: none;
 .picture-inner {
   padding: 60px 0 70px 0;
 }
-.picture-title {
-  color: #333;
-}
 
-.picture-area ul{
+.picture-area {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
+  font-size: 0;
 }
 
 .picture-area li {
@@ -133,23 +136,20 @@ text-decoration: none;
   opacity: 0.7;
 }
 
-.picture-area li a {
-  display: block;
-  width: 100%;
-}
-
 .picture-area li:hover {
   opacity: 1;
-  cursor: pointer;
 }
+
 .picture-area li:nth-child(n+4) {
   margin-top: 80px;
 }
+
 .picture-area li:nth-child(3n+1) {
   margin-left: 0;
 }
+
 .picture-text-area {
-margin-top: 90px;
+  margin-top: 90px;
 }
 
 .picture-text {
@@ -171,7 +171,6 @@ margin-top: 90px;
 
 .mail-icon:hover {
   color: #333;
-  cursor: pointer;
 }
 
 /* スキルゲージ */
@@ -190,14 +189,19 @@ margin-top: 90px;
   line-height: 30px;
 }
 
+.skill-gauge {
+  display: flex;
+  justify-content: space-between;
+}
+
 .skill-gauge li{
-  float: left;
   margin-left: 180px;
 }
 
 .skill-gauge li:first-of-type{
   margin-left: 0;
 }
+
 /* SNS */
 .SNS-nav {
   background-color: #f2f2f2;
@@ -207,13 +211,13 @@ margin-top: 90px;
   padding: 200px 0;
 }
 
-.SNS-inner li {
-  display: inline-block;
+.SNS-icon-area {
+  display: flex;
+  justify-content: center;
 }
 
-.SNS-inner li a {
-  display: block;
-  width: 100%;
+.SNS-icon-area li:hover {
+  background-color: #fff;
 }
 
 .SNS-icon {
@@ -222,16 +226,12 @@ margin-top: 90px;
   line-height: 100px;
 }
 
-.SNS-icon:hover {
-  background-color: #fff;
-  cursor: pointer;
-}
 
 /* フッター */
 .footer {
   background-color: #74cfae;
-  color: #fff;
 }
+
 .footer-inner {
   padding: 20px 0 25px 0;
 }
@@ -239,6 +239,7 @@ margin-top: 90px;
 .footer-text {
 text-align: right;
 }
+
 .heart {
   font-size: 1em;
 }

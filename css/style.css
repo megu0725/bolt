@@ -77,13 +77,10 @@ a {
 /* メイン */
 .main {
   padding-top: 70px;
-}
-
-/* メインタイトル */
-.Page-title {
   background-color: #f2f2f2;
 }
 
+/* メインタイトル */
 .maintitle-inner {
   padding: 250px 0;
 }
@@ -123,10 +120,6 @@ a {
 }
 
 /* 画像エリア */
-.art-picture {
-  background-color: #f2f2f2;
-}
-
 .picture-inner {
   padding: 60px 0 70px 0;
 }
@@ -162,9 +155,10 @@ a {
 
 .picture-text {
   display: inline-block;
-  width: 42%;
+  width: 60%;
   line-height: 25px;
   color: #333;
+  font-family: "Ralaway";
 }
 
 .mail-icon {
@@ -211,10 +205,6 @@ a {
 }
 
 /* SNS */
-.SNS-nav {
-  background-color: #f2f2f2;
-}
-
 .SNS-inner {
   padding: 200px 0;
 }
@@ -256,6 +246,66 @@ a {
   font-size: 1em;
 }
 
+/* TABデザイン */
+@media screen and (max-width:1199px){
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .Description-inner {
+    padding: 50px 0 25px 0;
+    display: block;
+  }
+
+  .Description-textbox {
+    margin: 20px auto 0 auto;
+    width: 85%;
+  }
+
+  .picture-inner {
+    padding: 60px 0 70px 0;
+  }
+
+  .picture-area {
+    flex-direction: column;
+    margin-top: 40px;
+  } 
+
+  .picture-area li {
+    margin-left: 0;
+  }
+
+  .picture-area li:not(:nth-child(4)){
+    margin-top: 0;
+  }
+
+  .picture-text-area {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+
+  .picture-text {
+    width: auto;
+  }
+
+  .mail-icon {
+    margin: 40px auto 0 auto;
+  }
+
+  .skill-gauge {
+    display: block;
+  }
+
+  .skill-gauge li {
+    margin: 88px 0 0 0;
+  }
+
+  .skill-gauge li:first-child {
+    margin-top: 0;
+  }
+}
+
 /* SPデザイン */
 @media screen and (max-width:767px){
   .inner {
@@ -270,42 +320,46 @@ a {
   .sp {
     display: block;
   }
-  
-  .header-inner {
-    justify-content: flex-start;
-  }
 
   .menu-ber {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 25px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin: 0 0 0 auto;
   }
   
-  .menu-ber span {
-    position: absolute;
-    top: 50%;
-    left: 0;
+  .menu-ber li {
     border: 1px solid #ddd;
+    width: 20px;
     margin-top: 5px;
-    display: block;
-    transform: translateY(-50%);
+  }
+
+  .menu-ber li:first-child {
+    margin-top: 0;
   }
   
-  .menu-ber span::before {
-
+  .maintitle-inner {
+    padding: 160px 0 130px 0;
   }
 
-  .menu-ber span::after{
-
+  .main-title {
+    font-size: 80px;
   }
 
-}
-/* TABデザイン */
-@media screen and (max-width:1199px){
+  .maintitle-inner p {
+    margin-top: 20px;
+    font-size: 30px;
+  }
 
+  .SNS-inner {
+    padding-top: 50px;
+  }
+
+  .SNS-icon-area li {
+    margin: 0 15px;
+  }
+
+  .SNS-icon-area li i {
+    font-size: 3em;
+    line-height: 150px;
+  }
 }

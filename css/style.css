@@ -131,13 +131,16 @@ a {
   font-size: 0;
 }
 
-.picture-area li {
+.picture-area li{
   margin-left: 100px;
+}
+
+.picture-area li a {
   opacity: 0.7;
   transition-duration: 0.3s;
 }
 
-.picture-area li:hover {
+.picture-area li a:hover {
   opacity: 1;
 }
 
@@ -308,11 +311,6 @@ a {
 
 /* SPデザイン */
 @media screen and (max-width:767px){
-  .inner {
-    width: 97%;
-    margin: 0 auto;
-  }
-  
   .pc {
     display: none;
   }

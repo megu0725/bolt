@@ -43,7 +43,6 @@ a {
 
 /* ヘッダー */
 .header {
-  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -54,6 +53,7 @@ a {
 }
 
 .header-inner {
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -279,7 +279,7 @@ a {
     margin-left: 0;
   }
 
-  .picture-area li:not(:nth-child(4)){
+  .picture-area li:not(:nth-child(3n+1)){
     margin-top: 0;
   }
 
@@ -360,5 +360,9 @@ a {
   .SNS-icon-area li i {
     font-size: 3em;
     line-height: 130px;
+  }
+
+  .SNS-icon-area li a {
+    width: 100%;
   }
 }
